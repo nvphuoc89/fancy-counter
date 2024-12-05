@@ -26,7 +26,7 @@ export default function Card() {
       <Title locked={locked} />
       <Count count={count} />
       <ResetButton setCount={setCount} />
-      <ButtonContainer hi="HI">
+      <ButtonContainer>
         <CountButton type="minus" setCount={setCount} locked={locked} />
         <CountButton type="plus" setCount={setCount} locked={locked} />
       </ButtonContainer>
