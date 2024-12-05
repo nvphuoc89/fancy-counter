@@ -1,14 +1,7 @@
-import CountButton from "./CountButton";
-
 export default function ButtonContainer({
-  setCount,
+  children,
 }: {
-  setCount: React.Dispatch<React.SetStateAction<number>>;
+  children: React.ReactNode;
 }) {
-  return (
-    <div className="button-container">
-      <CountButton type="minus" setCount={setCount} />
-      <CountButton type="plus" setCount={setCount} />
-    </div>
-  );
+  return <div className="button-container">{children}</div>;
 }
